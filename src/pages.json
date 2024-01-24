@@ -1,0 +1,105 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			// uni-ui 规则如下配置
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	},
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				// "backgroundColor": "#dee1e6",
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/circle/circle",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		},
+		{
+			"path": "pages/category/category",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "写作"
+			}
+		},
+		{
+			"path": "pages/details/details",
+			"style": {
+				// "navigationStyle": "custom",
+				"navigationBarTitleText": "书本信息"
+			}
+		},
+		// {
+		//   "path": "pages/index/components/Fond",
+		//   "style": {
+		//     "navigationBarTitleText": "发现"
+		//   }
+		// }
+		// {
+		//   "path": "pages/login/login",
+		//   "style": {
+		//     "navigationBarTitleText": "登录"
+		//   }
+		// }
+		{
+			"path": "pages/read/read",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "read"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		// "navigationBarBackgroundColor": "#44d9e6",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	// 设置 TabBar
+	"tabBar": {
+		"color": "#333",
+		"selectedColor": "#27ba9b",
+		"backgroundColor": "#44e6da",
+		"borderStyle": "white",
+		"list": [
+			{
+				"text": "阅读",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/font-icon/read.png",
+				"selectedIconPath": "static/font-icon/read-active.png"
+			},
+			{
+				"text": "写作",
+				"pagePath": "pages/category/category",
+				"iconPath": "static/font-icon/write.png",
+				"selectedIconPath": "static/font-icon/write-active.png"
+			},
+			{
+				"text": "文境圈",
+				"pagePath": "pages/circle/circle",
+				"iconPath": "static/font-icon/wjq.png",
+				"selectedIconPath": "static/font-icon/wjq-active.png"
+			},
+			{
+				"text": "我的",
+				"pagePath": "pages/my/my",
+				"iconPath": "static/font-icon/my.png",
+				"selectedIconPath": "static/font-icon/my-active.png"
+			}
+		]
+	}
+}
